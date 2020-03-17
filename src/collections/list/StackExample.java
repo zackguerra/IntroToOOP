@@ -1,4 +1,5 @@
 package collections.list;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.HashMap;
@@ -63,6 +64,7 @@ public class StackExample {
         if (!stack.isEmpty()) {
             return code.length();
         }
+
         return -1;
     }
 }
