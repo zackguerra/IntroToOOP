@@ -1,55 +1,41 @@
-/**package collections.map;
+package collections.map;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class HashMapExample {
 
-    //HashMap<Key, Value>: A set of key-value pairs
+    // HashMap<K, V>: A set of key-value pairs
     public static void main(String[] args) {
         Map<String, String> acronyms = new HashMap<>();
         acronyms.put("Lol", "Laughing out loud");
         acronyms.put("Yolo", "You only live once");
         acronyms.put("Smh", "Shake my head");
-        acronyms.put("Lmk", "Let me know");
+        acronyms.put("lmk", "Let me know");
         acronyms.put("Brb", "Be right back");
-        acronyms.put("Lmao", "Laughin my ass off");
-        acronyms.put("Stfu", "Shut the fxxx up");
-        acronyms.put("Afk", "Away from keyboard");
-        acronyms.put("Rofl", "Rolling on the floor laughing");
-        acronyms.put("Idk", "I don't know");
+        acronyms.put("Lmao", "Laughing my ass off");
+        acronyms.put("stfu", "Shut the fxxx up");
+        acronyms.put("afk", "away from keyboard");
+        acronyms.put("rofl", "Rolling on the floor laughing");
+        acronyms.put("idk", "I don't know");
 
-        System.out.println(acronyms.get("Stfu"));
-        System.out.println(acronyms.containsKey("Idk"));
+        System.out.println(acronyms.get("stfu")); // shows the value
+        System.out.println(acronyms.containsKey("idk")); // boolean
         System.out.println(acronyms.containsKey("fyi"));
-        System.out.println(acronyms.size());
+        System.out.println(acronyms.size()); // shows the number of keys/values
 
         // loop through the map key-value pairs
         // map is not sorted (no order)
 
-         // Iterate by keys - no order preserved
+        // Iterate by keys - no order preserved
         for(String key: acronyms.keySet()) {
             System.out.println(key);
-            System.out.println(acronyms.get(key));  // value
+            System.out.println(acronyms.get(key)); // value
         }
+
         // Iterate by values - no order preserved
-        for(String value: acronyms.values()) System.out.println(value);
-
-
-
-        public static int hash(String acronyms) {
-            int h = 0;
-            for (char ch : acronyms.toCharArray()){
-                h += ch;
-            }
-            return;
+        for(String value: acronyms.values()) {
+            System.out.println(value);
         }
-
-
-
-
-
-
-
+    }
 }
-}*/
